@@ -1,0 +1,40 @@
+<!-- guitars.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Guitars - Paul Philpott</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <main class="max-w-6xl mx-auto py-12 px-4">
+    <h1 class="text-4xl font-bold mb-8">Custom Guitars</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-white rounded-xl shadow p-4">
+        <h2 class="text-xl font-semibold mb-2">Blue "Tex Mex" Telecaster</h2>
+        <div class="relative overflow-hidden rounded">
+          <div class="flex transition-transform ease-in-out duration-500 hover:pause" style="animation: scrollGallery 8s linear infinite;">
+            <img src="images/telcaster-blue-whole.jpg" class="w-full object-cover" />
+            <img src="images/telecaster-blue-front.jpg" class="w-full object-cover" />
+            <img src="images/telecaster-blue-back.jpg" class="w-full object-cover" />
+            <!-- <img src="guitar4.jpg" class="w-full object-cover" />
+          -->
+        </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <style>
+    @keyframes scrollGallery {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+    .hover\:pause:hover {
+      animation-play-state: paused;
+    }
+  </style>
+</body>
+</html>

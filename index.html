@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Philpottology - Home</title>
+  <title>Philpott Consulting - Home</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-950 text-gray-100 font-sans">
@@ -12,26 +12,37 @@
   <nav class="bg-gray-900 text-gray-100 p-4 sticky top-0 z-50 shadow">
     <ul class="flex space-x-6 max-w-6xl mx-auto justify-center">
       <li><a href="index.html" class="hover:text-indigo-400 font-semibold">Home</a></li>
-      <li><a href="guitars.html" class="hover:text-indigo-400 font-semibold">Guitar Builds</a></li>
-      <li><a href="resume.html" class="hover:text-indigo-400 font-semibold">Resume</a></li>
+     <!-- <li><a href="guitars.html" class="hover:text-indigo-400 font-semibold">Guitar Builds</a></li>
+    -->
+     <li><a href="resume.html" class="hover:text-indigo-400 font-semibold">Resume</a></li>
     </ul>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="relative h-screen bg-cover bg-center text-center" style="background-image: url('images/philpottology-amp.png');">
-    <div class="absolute inset-0 bg-black bg-opacity-20"></div>
-    <div class="relative z-10 flex flex-col items-center justify-center h-full p-8">
-      <h1 class="text-5xl font-bold tracking-wide text-white">Philpottology</h1>
-      <p class="mt-4 text-xl text-gray-300 max-w-xl">Engineering solutions for code, business, and craftsmanship</p>
-      <a href="#coding-projects" class="mt-6 inline-block px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg font-semibold">See Coding Projects</a>
+ <!-- Hero Section -->
+<section class="relative h-screen bg-cover bg-center text-center" style="background-image: url('images/philpottology-amp.png');">
+  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+
+  <!-- Hover Trigger Zone (Right half of screen, avoiding button) -->
+  <div class="absolute top-0 left-0 w-1/2 h-full z-20 group">
+    <div class="absolute bottom-10 right-10 bg-amber-100 bg-opacity-90 text-black text-sm p-3 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 max-w-xs pointer-events-none">
+      <strong>Interested in custom guitar projects?</strong><br>
+      Check these out!
     </div>
-  </section>
+  </div>
+
+  <div class="relative z-10 flex flex-col items-center justify-center h-half p-8 pt-24">
+    <h1 class="text-5xl font-bold tracking-wide text-white">Philpott Consulting</h1>
+    <p class="mt-4 text-xl text-white max-w-xl drop-shadow">Engineering business solutions with code, creativity, and craftsmanship.</p>
+    <a href="#coding-projects" class="mt-6 inline-block px-6 py-3 bg-amber-800 hover:bg-amber-700 text-white rounded-lg font-semibold z-30 relative">See My Work</a>
+  </div>
+</section>
+
 
   <!-- About Section -->
   <section id="about" class="py-16 px-6 max-w-4xl mx-auto text-center">
     <h2 class="text-3xl font-bold mb-6">About</h2>
     <p class="text-lg text-gray-300 leading-relaxed">
-      I'm a seasoned consultant with deep roots in electric and gas utilities, a passion for creative problem-solving, and a hands-on mindset. Whether it’s business analysis, custom-coded solutions, or hand-crafted instruments, I bring precision and grit to every project.
+      I'm a seasoned consultant with deep roots in energy and utilities, a passion for creative problem-solving, and a hands-on mindset. Whether it’s business analysis, custom-coded solutions, or hand-crafted instruments, I bring precision and grit to every project.
     </p>
   </section>
 
@@ -60,21 +71,21 @@
   <section id="guitar-preview" class="py-16 px-6 max-w-4xl mx-auto text-center">
     <h2 class="text-3xl font-bold mb-6">Guitar Builds Preview</h2>
     <a href="guitars.html" class="inline-block hover:opacity-80 transition-opacity duration-300">
-      <img src="images/telecaster-blue-front.jpg" alt="Blue Telecaster Front" class="mx-auto rounded-xl shadow-lg max-w-md" />
+      <img src="images/stratocaster-zebrawood-front.jpg" alt="Zebrawood Telecaster Front" class="mx-auto rounded-xl shadow-lg max-w-md" />
       <p class="mt-3 text-indigo-400 underline font-semibold">Explore Guitar Builds</p>
     </a>
     <p class="mt-4 text-gray-300 max-w-md mx-auto">
-      Built with my son — black hardware, bold blue finish. Headstock is a work in progress with plans for a unique “machete” style.
+      Built with my son — upgraded alnico pickups, black bridge with tremelo, metal pickguard. Headstock is a work in progress with final design stil TBD.  I am going to change the potentiometers to vintage Fender ones when I restring it so that the knobs sit flush.
     </p>
   </section>
 
-  <!-- Contact & Resume Teaser Section -->
+  <!-- Contact Section -->
   <section id="contact" class="bg-gray-800 py-16 px-6 max-w-4xl mx-auto text-center">
     <h2 class="text-3xl font-bold mb-6">Contact & Resume</h2>
     <p class="text-gray-300 mb-6 max-w-lg mx-auto">
       Interested in consulting or coding work? Feel free to reach out or <a href="resume.html" class="text-indigo-400 underline">check out my resume</a>.
     </p>
-    <form class="space-y-6 max-w-md mx-auto" action="mailto:your-email@example.com" method="POST" enctype="text/plain" >
+    <form class="space-y-6 max-w-md mx-auto" action="mailto:your-email@example.com" method="POST" enctype="text/plain">
       <input type="text" name="Name" placeholder="Your Name" required class="w-full p-3 bg-gray-900 border border-gray-700 rounded-md text-gray-100" />
       <input type="email" name="Email" placeholder="Your Email" required class="w-full p-3 bg-gray-900 border border-gray-700 rounded-md text-gray-100" />
       <textarea name="Message" rows="4" placeholder="Your Message" required class="w-full p-3 bg-gray-900 border border-gray-700 rounded-md text-gray-100"></textarea>
@@ -85,7 +96,5 @@
   <footer class="bg-gray-900 text-gray-400 text-center py-6 mt-20">
     &copy; 2025 Philpottology. Built with grit and Tailwind.
   </footer>
-  
 </body>
 </html>
-
