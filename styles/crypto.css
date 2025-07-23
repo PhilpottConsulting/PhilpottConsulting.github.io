@@ -1,0 +1,162 @@
+/* Highlight minimum price */
+.low {
+  background-color: #d0f0fd; /* light blue */
+  color: #0366d6; /* medium blue */
+  font-weight: 600;
+}
+
+/* Highlight maximum price with subtle sienna/orange */
+.high {
+  background-color: #faebd7; /* antique white (subtle warm) */
+  color: #a0522d; /* sienna */
+  font-weight: 600;
+}
+
+/* Action rows */
+
+/* Act Now: flashing subtle green */
+@keyframes flashGreen {
+  0%, 100% { background-color: #d4edda; }
+  50% { background-color: #b7ebc6; }
+}
+.action-now {
+  color: #155724; /* dark green */
+  font-weight: 700;
+  animation: flashGreen 2s infinite;
+  border-left: 5px solid #28a745; /* vibrant green accent */
+}
+
+/* Check It Out: warm sienna/orange */
+.check-it-out {
+  background-color: #fff8e7; /* pale warm yellow */
+  color: #b06a2a; /* sienna orange */
+  font-weight: 700;
+  border-left: 5px solid #d9822b;
+}
+
+/* Maybe: subtle gray */
+.maybe {
+  background-color: #f1f3f5; /* light gray */
+  color: #6c757d; /* medium gray */
+  font-weight: 700;
+  border-left: 5px solid #adb5bd;
+}
+
+/* Hover effect for table rows */
+tbody tr:hover {
+  background-color: #f0f4f8;
+}
+
+@keyframes crawl {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* General table styles to keep it clean */
+table {
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Optional: subtle border for header */
+thead tr {
+  border-bottom: 2px solid #cbd5e1;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  table-layout: auto; /* allow columns to adjust based on content */
+}
+
+th, td {
+  padding: 10px 15px;
+  text-align: center;
+  border: 1px solid #ccc;
+  white-space: nowrap; /* prevents number wrapping */
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #eef;
+}
+
+.price-up {
+  color: green;
+  font-weight: bold;
+}
+
+.price-down {
+  color: red;
+  font-weight: bold;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fc;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  table-layout: auto;
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: center;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+th {
+  background-color: #eef1f5;
+  font-weight: 600;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f7fa;
+}
+
+tr:hover {
+  background-color: #e3eefc;
+}
+

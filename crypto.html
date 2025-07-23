@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Prices</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Navigation -->
+  <nav class="bg-gray-900 text-gray-100 p-4 sticky top-0 z-50 shadow">
+    <ul class="flex space-x-6 max-w-6xl mx-auto justify-center">
+      <li><a href="index.html" class="hover:text-indigo-400 font-semibold">Home</a></li>
+      <li><a href="crypto.html" class="hover:text-indigo-400 font-semibold">Crypto Monitor</a></li>
+    
+     <li><a href="resume.html" class="hover:text-indigo-400 font-semibold">Resume</a></li>
+    </ul>
+  </nav>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Crypto Spread Monitor</title>
+    <link rel="stylesheet" href="styles/crypto.css" />
+    <script defer src="assets/crypto.js"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto px-4 py-8">
+      <h1 class="text-3xl font-bold mb-4">Crypto Spread Monitor</h1>
+      <button id="refresh-btn" class="bg-blue-600 text-white px-4 py-2 rounded mb-4 hover:bg-blue-700 transition">
+        Refresh
+      </button>
+
+      <div class="overflow-x-auto">
+        <table class="table-auto w-full text-left border border-gray-300 bg-white">
+          <thead>
+            <tr class="bg-gray-200">
+              <th class="px-4 py-2">Coin</th>
+              <th class="px-4 py-2">BinanceUS</th>
+              <th class="px-4 py-2">Coinbase</th>
+              <th class="px-4 py-2">Kraken</th>
+              <th class="px-4 py-2">CoinGecko</th>
+              <th class="px-4 py-2">Gemini</th>  
+              <th class="px-4 py-2">Min</th>
+              <th class="px-4 py-2">Max</th>
+              <th class="px-4 py-2">Spread</th>
+              <th class="px-4 py-2">Action</th>
+            </tr>
+          </thead>
+          <tbody id="crypto-table">
+            <!-- Test rows hardcoded -->
+            <tr class="test-row action-now">
+              <td class="px-4 py-2">MOVE</td>
+              <td class="px-4 py-2">100</td>
+              <td class="px-4 py-2">105</td>
+              <td class="px-4 py-2">102</td>
+              <td class="px-4 py-2">101</td>
+              <td class="px-4 py-2">100</td>
+              <td class="px-4 py-2">105</td>
+              <td class="px-4 py-2">5%</td>
+              <td class="px-4 py-2">Act Now</td>
+            </tr>
+            <tr class="test-row check-it-out">
+              <td class="px-4 py-2">CHECK</td>
+              <td class="px-4 py-2">100</td>
+              <td class="px-4 py-2">102</td>
+              <td class="px-4 py-2">101</td>
+              <td class="px-4 py-2">101</td>
+              <td class="px-4 py-2">100</td>
+              <td class="px-4 py-2">102</td>
+              <td class="px-4 py-2">2%</td>
+              <td class="px-4 py-2">Check It Out</td>
+            </tr>
+            <tr class="test-row maybe">
+              <td class="px-4 py-2">MEH?</td>
+              <td class="px-4 py-2">100</td>
+              <td class="px-4 py-2">100.5</td>
+              <td class="px-4 py-2">101.1</td>
+              <td class="px-4 py-2">101.0</td>
+              <td class="px-4 py-2">100</td>
+              <td class="px-4 py-2">101.1</td>
+              <td class="px-4 py-2">1.1%</td>
+              <td class="px-4 py-2">Eh, you busy?</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+*Spread Monitor grabs available coin data from each coin exchange and determines a percentage spread to evaluate simple arbitrage opportunities.  The idea is to eventually design and implement arbitrage transactions, possibly triangluar, with flash loans.  Trading fees, slippage, and other factors should also be considered when designing trades.
+      <div id="crawler" class="mt-6 p-4 bg-gray-200 rounded font-mono overflow-x-auto"></div>
+    </div>
+  </body>
+</html>
